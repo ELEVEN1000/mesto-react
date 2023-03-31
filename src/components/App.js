@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './Header.js';
 import Header from "./Header.js";
 import Footer from "./Footer.js";
-import PopupZoom from "./PopupZoom.js";
+import ImagePopup from "./ImagePopup.js";
 import Main from "./Main.js";
 import PopupWithForm from "./PopupWithForm.js";
 
@@ -70,7 +70,7 @@ function App() {
           <button className="popup__save-button popup__confirm-button" type="submit" aria-label="save">Да</button>
       </PopupWithForm>
 
-      <PopupZoom card={selectedCard} onClose={closeAllPopups}/>
+      <ImagePopup card={selectedCard} onClose={closeAllPopups}/>
     </div>
   )
 }

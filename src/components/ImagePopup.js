@@ -1,4 +1,4 @@
-function PopupZoom({card, onClose}) {
+function ImagePopup({card, onClose}) {
   return (
     <div className={`popup popup_zoom ${Object.keys(card).length !== 0 ? "popup_opened" : ""}`}>
       <div className="popup__zoom-container">
@@ -10,4 +10,4 @@ function PopupZoom({card, onClose}) {
   )
 }
 
-export default PopupZoom;
+export default ImagePopup;
