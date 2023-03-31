@@ -5,7 +5,7 @@ function Card({card, onCardClick }) {
   return (
       <article className="element">
         <button className="element__trash" type="button" aria-label="Удалить место"></button>
-        <img src={card.link} alt="" className="element__image" onClick={handleClick}/>
+        <img src={card.link} alt={`Фотография ${card.name}`} className="element__image" onClick={handleClick}/>
         <div className="element__content">
           <h2 className="element__title">{card.name}</h2>
           <div className="element__like">

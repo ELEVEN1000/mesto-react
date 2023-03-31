@@ -5,7 +5,7 @@ function PopupWithForm ({title, name, isOpen, closeAllPopups, children, textButt
       <div className="popup__content">
         <button className="popup__close-button" type="button" onClick={closeAllPopups} aria-label="Закрыть"></button>
         <h2 className="popup__title">{title}</h2>
-        <form className={`popup__form popup__${form}`} name="popup-profile-change" noValidate>
+        <form className={`popup__form popup__${form}`} name={name} noValidate>
           {children}
           <button className="popup__save-button" type="submit">{textButton || ""}</button>
         </form>
