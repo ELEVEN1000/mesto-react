@@ -11,7 +11,6 @@ function App() {
   const [popupAvatarOpen, setAvatarPopupOpen] = useState(false);
   const [popupCardOpen, setCardPopupOpen] = useState(false);
   const [popupAnswerOpen, setAnswerPopupOpen] = useState(false);
-
   const [selectedCard, setSelectedCard] = useState({});
 
   const closeAllPopups = () => {
