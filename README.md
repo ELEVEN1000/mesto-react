@@ -9,6 +9,7 @@
 * JS
 * HTML
 * БЭМ
+* React
 
 ## Ссылка для демонстрации: 
 https://eleven1000.github.io/mesto/
