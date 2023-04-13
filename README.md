@@ -12,4 +12,4 @@
 * React
 
 ## Ссылка для демонстрации: 
-https://eleven1000.github.io/mesto/
+https://eleven1000.github.io/mesto-react/
