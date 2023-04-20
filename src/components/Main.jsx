@@ -2,15 +2,15 @@ import React, {useContext} from "react";
 import Card from "./Card";
 import CurrentUserContext from "../contexts/CurrentUserContext";
 
-function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick, cards}) {
+function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick, cards, onCardLike, onCardDelete}) {
   const currentUser = useContext(CurrentUserContext);
 
   return (
     <main className="content">
 
       <section className="profile">
-        <div className="profile__overlay">
-          <img src={currentUser.avatar} alt="Аватар профиля" className="profile__avatar" onClick={onEditAvatar}/>
+        <div className="profile__overlay" onClick={onEditAvatar}>
+          <img src={currentUser.avatar} alt="Аватар профиля" className="profile__avatar"/>
         </div>
 
         <div className="profile__info">
@@ -26,7 +26,7 @@ function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick, cards}) {
       </section>
 
       <section className="elements">{cards.map((card) => (
-        <Card card={card} key={card._id} onCardClick={onCardClick}/>
+        <Card card={card} key={card._id} onCardClick={onCardClick} onCardLike={onCardLike} onCardDelete={onCardDelete}/>
       ))}
       </section>
 
